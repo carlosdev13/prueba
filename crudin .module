@@ -1,0 +1,19 @@
+<?php
+
+/**
+ * Implement hook_schema().
+ */
+
+function crudin_menu()
+ {
+   $item['/crudin']=array('title'=>'List Records','description'=>'',   'route'=>'crudin.crudin_controller_listing');
+   
+   $item['/crudin/form/data']=array('title'=>'Add / Edit Form','description'=>'',  'route'=>'crudin.crudin_form');
+   
+   $item['/crudin/form/delete/{cid}']=array('title'=>'Delete Records','description'=>'',  'route'=>'crudin.delete_form');
+   
+return $item;  
+         
+}
+
+?>

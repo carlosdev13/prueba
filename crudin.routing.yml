@@ -1,0 +1,25 @@
+
+crudin.crudin_controller_listing:
+  path: '/crudin'
+  defaults:
+    _controller: '\Drupal\crudin\Controller\CrudinController::Listing'
+    _title: 'Listing Records'
+  requirements:
+    _permission: 'access content'
+
+crudin.crudin_form:
+  path: '/crudin/form/data'
+  defaults:
+    _form: '\Drupal\crudin\Form\CrudinForm'
+    _title: 'ADD / EDIT Form'
+  requirements:
+    _permission: 'TRUE'
+    
+crudin.delete_form:
+  path: '/crudin/form/delete/{cid}'
+  defaults:
+    _form: '\Drupal\crudin\Form\DeleteForm'
+    _title: 'Delete Form'
+  requirements:
+    _permission: 'TRUE'    
+ 

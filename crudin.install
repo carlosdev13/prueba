@@ -1,0 +1,26 @@
+<?php
+
+function crudin_schema() {
+    $schema['crudin'] = [
+        'description' => 'Crud Crudin',
+        'fields' => [
+            'id' => [
+                'description' => 'Holds the id',
+                'type' => 'serial',
+                'not null' => true,
+                'unsigned' => true,
+            ],
+            'name' => [
+                'description' => 'Username',
+            'type' => 'varchar', 'length'=> '40', 'not null'=>TRUE,], 
+            
+            'age' => [
+                'description' => 'age',
+            'type' => 'varchar', 'length'=> '40', 'not null'=>TRUE,],],
+            
+            'primary key'=>['id'],];  
+            return $schema; 
+         
+}
+
+?>
