@@ -8,18 +8,18 @@ crudin.crudin_controller_listing:
     _permission: 'access content'
 
 crudin.crudin_form:
-  path: '/crudin/form/data'
+  path: '/crudin/form/data/{id}'
   defaults:
     _form: '\Drupal\crudin\Form\CrudinForm'
     _title: 'ADD / EDIT Form'
   requirements:
     _permission: 'TRUE'
-    
+
 crudin.delete_form:
-  path: '/crudin/form/delete/{cid}'
+  path: '/crudin/form/delete/{id}'
   defaults:
     _form: '\Drupal\crudin\Form\DeleteForm'
     _title: 'Delete Form'
   requirements:
-    _permission: 'TRUE'    
- 
+    _permission: 'TRUE'
+
